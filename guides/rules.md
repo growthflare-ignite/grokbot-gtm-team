@@ -30,9 +30,9 @@ Grok Bot has no per-Bot connector switch: once you connect a tool, every Bot cou
 | Copywriter | None |
 | Infrastructure & Deliverability | None |
 | Inbox Manager | Calendar read only |
-| Lead Reactivation | Calendar read only |
+| Lead Reactivation | EmailBison, with the client's workspace API key |
 
-Your sending platform, inbox provider and data tools are never Grok Bot connectors. Claude Code reaches them on your Mac.
+One exception: Lead Reactivation connects to EmailBison directly, so it can read the reply threads it works through. It reads, and sends only a draft you said yes to. Because Grok Bot shares connectors across Bots, every other Bot's instructions keep it off EmailBison. Your inbox provider and lead data tools are never Grok Bot connectors. Claude Code reaches them on your Mac.
 
 ## 6) One client at a time
 

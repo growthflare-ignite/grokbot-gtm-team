@@ -106,7 +106,7 @@ Ignite repos the Bots already know how to use. Clone the ones you want next to t
 - **The Head of GTM runs the team, it doesn't do the work.** One Bot that plans and gates, 6 that each own one job. Every result gets checked by someone other than its maker.
 - **Nothing goes out without your yes.** Drafts are the default. Sending, launching, uploading and buying all wait for your yes on that exact item.
 - **One routine.** The Head of GTM's rollup every weekday at 08:30. A routine earns its place only if you read it every time.
-- **No data connectors in Grok Bot.** Grok Bot can't restrict connectors per Bot, so your sending platform, inbox provider and lead data tools stay on your Mac, where Claude Code reads them with your keys.
+- **One data connector in Grok Bot.** Grok Bot can't restrict connectors per Bot, so only Lead Reactivation connects to EmailBison, to read the reply threads it works through. Your inbox provider and lead data tools stay on your Mac, where Claude Code reads them with your keys.
 - **Client data never leaves your Mac.** `clients/` is ignored by git, so a pull or a push never carries a client's files.
 
 ## What you need

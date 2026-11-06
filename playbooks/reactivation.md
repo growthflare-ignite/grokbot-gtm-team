@@ -26,7 +26,7 @@ Rule from the training: do not let an interested lead go until they tell you the
 A lead is forgotten when all 3 are true:
 
 1. **They showed interest.** Interested, asked for times, asked for the Loom or the material, asked a real question about the offer, or sent a referral to someone who never got contacted.
-2. **No meeting is booked.** Check the calendar, the booking tool and the CRM. A booked call anywhere means they're out.
+2. **No meeting is booked.** Check EmailBison: the lead isn't marked booked, and no time was confirmed in the thread. Booked by any route means they're out.
 3. **Nobody followed up.** Either nobody ever replied to them, or our last message is more than 3 days old and they didn't answer it.
 
 Leave out:
@@ -41,9 +41,9 @@ When the label and the words disagree, trust the words. Read the reply.
 ## The sweep
 
 1. **Pick the scope.** One client. One campaign, or all of that client's campaigns. Default window: the last 180 days.
-2. **Pull the replies.** Every reply in the window from the sending platform, with the full thread.
+2. **Pull the replies.** Every reply in the window from the client's EmailBison workspace, with the full thread.
 3. **Classify each one** with the triage categories in [inbox.md](inbox.md). Keep the interest categories only.
-4. **Check bookings** against the calendar, booking tool and CRM.
+4. **Check bookings** in EmailBison: the lead's status, and whether a time was confirmed in the thread.
 5. **Check the last touch.** Who sent the last message in the thread, and when.
 6. **Apply the exclusions** above.
 7. **Sort by days waiting**, longest first.
@@ -111,7 +111,7 @@ Worth a quick call to go through the rest? [day] at [time] works.
 
 ## After the yes
 
-- Send each approved draft in its thread.
+- Send each approved draft in its thread in EmailBison, from the inbox the lead wrote to.
 - Move the lead into the meeting-request or info-request subsequence in the sequencer ([inbox.md](inbox.md)), so they get nudged until they book or say no.
 - Update the pre CRM stage.
 - Log it against the original campaign code, with "reactivated" as the source, so the rollup shows what the sweep earned.

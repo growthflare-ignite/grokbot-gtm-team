@@ -47,7 +47,7 @@ Set up my Grok Bot GTM team from ~/repos/grokbot-gtm-team on my Mac.
 During setup, don't connect any tool, send any message or spend credits.
 ```
 
-After setup, connect only the tools each Bot's instructions name, read only (Slack, web search, Google Drive and Sheets, your calendar). Your sending platform, inbox provider and data tools stay off Grok Bot: Claude Code reaches them on your Mac with the keys in your `.env`.
+After setup, connect only the tools each Bot's instructions name (Slack, web search, Google Drive and Sheets, your calendar, and EmailBison for Lead Reactivation). Use the client's workspace API key for EmailBison, never an account-wide key. Your inbox provider and lead data tools stay off Grok Bot: Claude Code reaches them on your Mac with the keys in your `.env`.
 
 ## Prefer to do it by hand?
 
