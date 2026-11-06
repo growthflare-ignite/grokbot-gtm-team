@@ -1,0 +1,14 @@
+# Client work stays on your Mac. Never commit it.
+clients/*
+!clients/README.md
+
+# Keys
+.env
+.env.*
+!.env.example
+
+# Lead data
+*.csv
+*.xlsx
+
+.DS_Store
