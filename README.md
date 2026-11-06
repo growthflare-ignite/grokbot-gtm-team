@@ -1,12 +1,12 @@
 # Grok Bot GTM team
 
-**6 Grok Bot agents that run cold email campaigns for your clients, the rules they work by, and the playbooks from our Ignite trainings that Claude Code and Codex follow to do the real work.**
+**7 Grok Bot agents that run cold email campaigns for your clients, the rules they work by, and the playbooks from our Ignite trainings that Claude Code and Codex follow to do the real work.**
 
 [![The Grok Bot GTM team](assets/org-chart.png)](assets/org-chart.png)
 
-Running cold email for clients is 5 jobs: find the angle and the offer, find the right people, write the emails, keep them out of spam, and work the replies until a meeting is booked. This repo turns those jobs into a team. Every Bot has 1 job. The Head of GTM runs the team like a chief of staff: it writes the campaign contract, routes the work, gates every step and sends you one rollup each morning. Anything that needs producing goes to Claude Code or Codex on your Mac, using the playbooks in this repo. You approve.
+Running cold email for clients is 6 jobs: find the angle and the offer, find the right people, write the emails, keep them out of spam, work the replies until a meeting is booked, and go back for the interested leads who never booked. This repo turns those jobs into a team. Every Bot has 1 job. The Head of GTM runs the team like a chief of staff: it writes the campaign contract, routes the work, gates every step and sends you one rollup each morning. Anything that needs producing goes to Claude Code or Codex on your Mac, using the playbooks in this repo. You approve.
 
-**[Import the team in 1 prompt](setup-prompt.md)** · [The 6 Bots](#the-team) · [The playbooks](#the-playbooks) · [The rules](guides/rules.md) · [Claude Code and Codex](guides/claude-code-and-codex.md)
+**[Import the team in 1 prompt](setup-prompt.md)** · [The 7 Bots](#the-team) · [The playbooks](#the-playbooks) · [The rules](guides/rules.md) · [Claude Code and Codex](guides/claude-code-and-codex.md)
 
 ## Import the team
 
@@ -30,7 +30,8 @@ Nothing is sent or spent during setup. Prefer to do it by hand? Every file in [a
 | [Infrastructure & Deliverability](agents/05-infrastructure-deliverability.md) | Keeps the emails out of spam: domains, inboxes, capacity, campaign builds, health | Head of GTM |
 | **On call** | | |
 | [Inbox Manager](agents/06-inbox-manager.md) | Triages replies, drafts answers, books the meetings | You |
-| [Campaign Room](agents/07-campaign-room.md) | The group chat where the Bots hand work to each other | |
+| [Lead Reactivation](agents/07-lead-reactivation.md) | Finds the interested leads nobody followed up with, drafts the follow-ups | You |
+| [Campaign Room](agents/08-campaign-room.md) | The group chat where the Bots hand work to each other | |
 
 ## How a campaign flows
 
@@ -50,6 +51,8 @@ Pre-launch QA       list + copy + build, then your yes, then launch
   ↓
 Inbox Manager       every reply triaged, interested leads booked
   ↓
+Lead Reactivation   interested leads who went cold, found and followed up
+  ↓
 Head of GTM         the morning rollup: numbers, blockers, decisions for you
 ```
 
@@ -58,7 +61,7 @@ Head of GTM         the morning rollup: numbers, blockers, decisions for you
 ```text
 You           goals and approvals
   ↓
-Grok Bot      6 Bots and 1 group chat; the Head of GTM routes the work
+Grok Bot      7 Bots and 1 group chat; the Head of GTM routes the work
   ↓
 Claude Code   any Bot can send it a unit of work: outcome, inputs, playbook,
 + Codex       limits, client and campaign code
@@ -83,6 +86,7 @@ Our Ignite trainings, written as the rules Claude Code follows. Every Bot points
 | [taste.md](playbooks/taste.md) | What good looks like, and the reject-on-sight test | Copywriter, Inbox Manager |
 | [infrastructure.md](playbooks/infrastructure.md) | Domains, inboxes, DNS, warmup, capacity, campaign settings, the deliverability rulebook | Infrastructure & Deliverability |
 | [inbox.md](playbooks/inbox.md) | Reply triage, drafting, booking, objections, the daily inbox report | Inbox Manager |
+| [reactivation.md](playbooks/reactivation.md) | Finding interested leads nobody followed up with, the report, the follow-up drafts | Lead Reactivation |
 
 `opinions.md` and `taste.md` are GrowthFlare's defaults. Make them yours: change a rule there, and every Bot follows the new one.
 
@@ -94,12 +98,12 @@ Ignite repos the Bots already know how to use. Clone the ones you want next to t
 |---|---|
 | [demand-miner](https://github.com/growthflare-ignite/demand-miner) | Market Researcher |
 | [spam-check](https://github.com/growthflare-ignite/spam-check) | Copywriter, List Builder |
-| [inbox-ai-manager](https://github.com/growthflare-ignite/inbox-ai-manager) | Inbox Manager |
+| [inbox-ai-manager](https://github.com/growthflare-ignite/inbox-ai-manager) | Inbox Manager, Lead Reactivation |
 | [lead-magnet-skill](https://github.com/growthflare-ignite/lead-magnet-skill) | Market Researcher, when the offer is a lead magnet |
 
 ## Design choices
 
-- **The Head of GTM runs the team, it doesn't do the work.** One Bot that plans and gates, 5 that each own one job. Every result gets checked by someone other than its maker.
+- **The Head of GTM runs the team, it doesn't do the work.** One Bot that plans and gates, 6 that each own one job. Every result gets checked by someone other than its maker.
 - **Nothing goes out without your yes.** Drafts are the default. Sending, launching, uploading and buying all wait for your yes on that exact item.
 - **One routine.** The Head of GTM's rollup every weekday at 08:30. A routine earns its place only if you read it every time.
 - **No data connectors in Grok Bot.** Grok Bot can't restrict connectors per Bot, so your sending platform, inbox provider and lead data tools stay on your Mac, where Claude Code reads them with your keys.

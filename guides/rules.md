@@ -1,6 +1,6 @@
 # The rules that keep the team safe
 
-6 Bots with access to your clients' inboxes, lead data and sending platform need a few hard rules. These are already in every Bot's instructions.
+7 Bots with access to your clients' inboxes, lead data and sending platform need a few hard rules. These are already in every Bot's instructions.
 
 ## 1) Nothing goes out without your yes
 
@@ -16,7 +16,7 @@ Research brief, then list and infrastructure in parallel, then copy, then pre-la
 
 ## 4) Our rules come from the playbooks
 
-Copy follows [copy.md](../playbooks/copy.md) and [taste.md](../playbooks/taste.md). Offers follow [offers.md](../playbooks/offers.md). Lists follow [lists.md](../playbooks/lists.md). Sending follows [infrastructure.md](../playbooks/infrastructure.md). Replies follow [inbox.md](../playbooks/inbox.md). [opinions.md](../playbooks/opinions.md) sits over all of them. If a decision needs a rule that isn't written down, the Bot asks you. It never fills the gap from general best practice.
+Copy follows [copy.md](../playbooks/copy.md) and [taste.md](../playbooks/taste.md). Offers follow [offers.md](../playbooks/offers.md). Lists follow [lists.md](../playbooks/lists.md). Sending follows [infrastructure.md](../playbooks/infrastructure.md). Replies follow [inbox.md](../playbooks/inbox.md). Forgotten leads follow [reactivation.md](../playbooks/reactivation.md). [opinions.md](../playbooks/opinions.md) sits over all of them. If a decision needs a rule that isn't written down, the Bot asks you. It never fills the gap from general best practice.
 
 ## 5) Each Bot names its connectors
 
@@ -30,6 +30,7 @@ Grok Bot has no per-Bot connector switch: once you connect a tool, every Bot cou
 | Copywriter | None |
 | Infrastructure & Deliverability | None |
 | Inbox Manager | Calendar read only |
+| Lead Reactivation | Calendar read only |
 
 Your sending platform, inbox provider and data tools are never Grok Bot connectors. Claude Code reaches them on your Mac.
 

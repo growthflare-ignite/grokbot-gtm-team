@@ -16,6 +16,7 @@ The Head of GTM sent you 5 parts: outcome, inputs, playbook, limits, and the cli
    - copy: `playbooks/copy.md`, `playbooks/taste.md`
    - domains, inboxes, campaign builds, health: `playbooks/infrastructure.md`
    - replies: `playbooks/inbox.md`
+   - forgotten leads: `playbooks/reactivation.md`
 4. The client's files: `clients/<client>/client.md` and the campaign's `clients/<client>/campaigns/<code>/campaign.md`.
 
 If the playbooks and the campaign contract disagree, the contract wins only where it says so on purpose. If a decision needs a rule that isn't written anywhere, stop and ask. Don't fill it from general best practice.
